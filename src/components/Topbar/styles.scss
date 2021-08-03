@@ -1,0 +1,12 @@
+.topbar-container {
+  background-color: rebeccapurple;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+
+  &__logo {
+    background-color: rgb(44, 156, 156);
+    margin-left: auto;
+  }
+}

@@ -1,5 +1,13 @@
-import React from "react"
+import React from "react";
+import "../styles/styles.scss";
+
+// Components
+import Layout from "../components/Layout";
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <div className="main-app">
+      <Layout />
+    </div>
+  );
 }
