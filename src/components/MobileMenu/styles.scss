@@ -1,0 +1,32 @@
+.overlay {
+  position: fixed;
+  z-index: 5;
+  top: 60px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.89);
+  transition: background-color 0.3s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  .links-container {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > div {
+      background-color: rgb(39, 39, 39);
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+    a {
+      // background-color: rgb(116, 116, 116);
+      padding: 20px 30px;
+      text-align: center;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
