@@ -1,12 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
 .topbar-container {
-  background-color: rebeccapurple;
+  background-color: rgb(36, 36, 36);
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-
-  &__logo {
-    background-color: rgb(44, 156, 156);
-    margin-left: auto;
+  padding: 0 5px 0 0px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  .hamburger-react {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    margin-right: auto;
   }
+  // &__logo {
+  //   // background-color: rgb(255, 255, 255);
+  //   margin-left: auto;
+  //   font-family: "Rubik", sans-serif;
+  //   font-size: 30px;
+  //   color: white;
+  // }
 }
