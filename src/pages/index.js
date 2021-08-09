@@ -10,9 +10,12 @@ export default function Home() {
     <Layout>
       <div className="main-app">
         <StaticImage
+          id="homepage"
           src="../assets/images/trucks.jpg"
           alt="A convoy of trucks"
         />
+        <div id="about">אודות</div>
+        <div id="contact">צור קשר</div>
       </div>
     </Layout>
   );
