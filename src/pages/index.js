@@ -1,19 +1,15 @@
 import React from "react";
 import "../styles/styles.scss";
-import { StaticImage } from "gatsby-plugin-image";
 
 // Components
 import Layout from "../components/Layout";
+import Home from "../components/Home";
 
-export default function Home() {
+export default function MainApp() {
   return (
     <Layout>
       <div className="main-app">
-        <StaticImage
-          id="homepage"
-          src="../assets/images/trucks.jpg"
-          alt="A convoy of trucks"
-        />
+        <Home id="homepage" />
         <div id="about">אודות</div>
         <div id="contact">צור קשר</div>
       </div>
