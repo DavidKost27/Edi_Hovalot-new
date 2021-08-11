@@ -3,13 +3,13 @@ import "../styles/styles.scss";
 
 // Components
 import Layout from "../components/Layout";
-import Home from "../components/Home";
+import HeroSection from "../components/HeroSection";
 
 export default function MainApp() {
   return (
     <Layout>
       <div className="main-app">
-        <Home id="homepage" />
+        <HeroSection id="heroSection" />
         <div id="about">אודות</div>
         <div id="contact">צור קשר</div>
       </div>

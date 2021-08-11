@@ -8,7 +8,7 @@ import { BgImage } from "gbimage-bridge";
 import PrimaryButton from "../PrimaryButton";
 import SecondaryButton from "../SecondaryButton";
 
-export default function Home() {
+export default function HeroSection() {
   const { backgroundImage123 } = useStaticQuery(
     graphql`
       query {
