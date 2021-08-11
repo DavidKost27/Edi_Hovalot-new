@@ -49,7 +49,7 @@ export default function MobileMenu(props) {
       <motion.div
         className="links-container"
         variants={hiddenMenu}
-        initial="visible"
+        initial="hidden"
         animate={`${isOpen ? "visible" : "hidden"}`}
       >
         <motion.div variants={item}>
