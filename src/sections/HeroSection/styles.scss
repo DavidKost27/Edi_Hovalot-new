@@ -3,7 +3,7 @@
   min-height: calc(100vh - 60px);
   background-position: 64% 50%;
   background-size: 260% 100%;
-  .home-container {
+  .hero-section-container {
     background-color: rgba(0, 0, 0, 0.671);
     width: 100%;
     height: calc(100vh - 60px);
@@ -21,6 +21,9 @@
       max-width: 300px;
       margin-left: auto;
       margin-top: 10px;
+    }
+    & > button {
+      margin-left: auto;
     }
   }
 }
