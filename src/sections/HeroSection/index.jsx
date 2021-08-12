@@ -5,8 +5,8 @@ import { getImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
 
 // Components
-import PrimaryButton from "../PrimaryButton";
-import SecondaryButton from "../SecondaryButton";
+import PrimaryButton from "../../components/PrimaryButton";
+import SecondaryButton from "../../components/SecondaryButton";
 
 export default function HeroSection() {
   const { backgroundImage123 } = useStaticQuery(
@@ -25,7 +25,7 @@ export default function HeroSection() {
 
   return (
     <BgImage image={pluginImage} className="backgound">
-      <div className="home-container">
+      <div className="hero-section-container">
         <h1>אדי הובלות</h1>
         <p>שירותי הובלה אחסנה ואריזה מכל הלב - לכל אחד - בכל מקום</p>
 

@@ -1,0 +1,22 @@
+.about-section-container {
+  color: rgb(255, 255, 255);
+  background-color: #292b34;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  direction: rtl;
+  padding: 30px 30px;
+  margin: 30px 20px;
+  & > h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  & > p {
+    font-size: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+}
