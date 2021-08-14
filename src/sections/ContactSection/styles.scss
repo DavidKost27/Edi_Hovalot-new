@@ -27,14 +27,86 @@
     font-size: 20px;
     margin: 10px 0;
     width: 100%;
+    padding: 10px 20px;
 
     & > span {
       width: 25px;
       height: 25px;
+      & > svg {
+        fill: rgb(255, 255, 255);
+      }
     }
     & > div {
       margin-right: auto;
       margin-left: auto;
+    }
+  }
+}
+
+// tablet
+@media only screen and (min-width: 768px) {
+  .contact-section-container {
+    padding: 30px 160px;
+    & > h2 {
+      font-size: 35px;
+    }
+    & > p {
+      font-size: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+    & > button:first-of-type {
+      & > div {
+      }
+    }
+    & > button {
+      font-size: 30px;
+      & > span {
+        width: 35px;
+        height: 35px;
+        & > svg {
+        }
+      }
+      & > div {
+      }
+    }
+  }
+}
+
+// tablet
+@media only screen and (min-width: 1366px) {
+  .contact-section-container {
+    padding: 60px 430px;
+    & > h2 {
+      font-size: 35px;
+    }
+    & > p {
+      font-size: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+    & > button:first-of-type {
+      & > div {
+      }
+    }
+    & > button {
+      font-size: 30px;
+      & > span {
+        width: 35px;
+        height: 35px;
+      }
+      & > div {
+      }
+    }
+    & > button:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: 2px solid rgb(0, 0, 0);
+      & > span {
+        & > svg {
+          fill: rgb(0, 0, 0);
+        }
+      }
     }
   }
 }
