@@ -3,7 +3,7 @@ import "./styles.scss";
 
 export default function AboutSection() {
   return (
-    <div className="about-section-container">
+    <div className="about-section-container" id="about">
       <h2>אדי הובלות</h2>
       <p>
         חברתנו בעלת נסיון של 25 שנים בהובלת ציוד רגיש ומכשור יקר בכל רחבי הארץ

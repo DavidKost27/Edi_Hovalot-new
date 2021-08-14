@@ -25,12 +25,14 @@ export default function HeroSection() {
 
   return (
     <BgImage image={pluginImage} className="backgound">
-      <div className="hero-section-container">
+      <div className="hero-section-container" id="heroSection">
         <h1>אדי הובלות</h1>
         <p>שירותי הובלה אחסנה ואריזה מכל הלב - לכל אחד - בכל מקום</p>
 
-        <PrimaryButton primaryText={"קבלו הצעת מחיר בחינם"} />
-        <SecondaryButton secondaryText={"? למה כדאי לבחור בנו"} />
+        <div className="buttons-container">
+          <PrimaryButton primaryText={"קבלו הצעת מחיר בחינם"} />
+          <SecondaryButton secondaryText={"? למה כדאי לבחור בנו"} />
+        </div>
       </div>
     </BgImage>
   );

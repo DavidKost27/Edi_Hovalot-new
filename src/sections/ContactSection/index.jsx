@@ -10,7 +10,7 @@ import Email from "../../assets/svg/email.svg";
 
 export default function ContactSection() {
   return (
-    <div className="contact-section-container">
+    <div className="contact-section-container" id="contact">
       <h2>צור קשר</h2>
       <SecondaryButton
         secondaryText={"052-7433-520"}

@@ -13,14 +13,16 @@ export default function MainApp() {
   return (
     <Layout>
       <div className="main-app">
-        <HeroSection id="heroSection" />
-        <ServicesSection />
-        <hr />
-        <FeaturesSection />
-        <hr />
-        <AboutSection id="about" />
-        <hr />
-        <ContactSection id="contact" />
+        <div className="main-app__container">
+          <HeroSection />
+          <ServicesSection />
+          <hr />
+          <FeaturesSection />
+          <hr />
+          <AboutSection />
+          <hr />
+          <ContactSection />
+        </div>
       </div>
     </Layout>
   );

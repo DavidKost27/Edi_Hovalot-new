@@ -1,11 +1,19 @@
 .footer-container {
-  background-color: #292b34;
+  background-color: rgb(34, 34, 34);
   color: rgba(160, 160, 160, 0.425);
   width: 100%;
-  padding: 10px 0;
+  // padding: 10px 0;
   display: flex;
   justify-content: center;
+  height: 40px;
   &__copyrights {
+    color: rgba(160, 160, 160, 0.425);
+    background-color: #292b34;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    max-width: 1366px;
     direction: rtl;
   }
 }

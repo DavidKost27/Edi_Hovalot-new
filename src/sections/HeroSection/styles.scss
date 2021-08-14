@@ -1,3 +1,4 @@
+// mobile
 .backgound {
   width: 100%;
   min-height: calc(100vh - 60px);
@@ -11,6 +12,7 @@
     padding-right: 20px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     & > h1 {
       padding-top: 110px;
       font-size: 55px;
@@ -19,11 +21,66 @@
       text-align: right;
       font-size: 20px;
       max-width: 300px;
-      margin-left: auto;
       margin-top: 10px;
     }
-    & > button {
-      margin-left: auto;
+    .buttons-container {
+      width: 210px;
+      & > button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// tablet
+@media only screen and (min-width: 768px) {
+  .backgound {
+    .hero-section-container {
+      padding-right: 60px;
+      & > h1 {
+        padding-top: 180px;
+        font-size: 100px;
+      }
+      & > p {
+        font-size: 30px;
+        max-width: 450px;
+        margin-top: 10px;
+      }
+      .buttons-container {
+        width: 300px;
+        & > button {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+// web
+@media only screen and (min-width: 1366px) {
+  .backgound .backgound::before,
+  .backgound::after {
+    background-position: 100% 50% !important;
+    background-size: 120% 120% !important;
+  }
+
+  .backgound .hero-section-container {
+    padding-right: 50px;
+    & > h1 {
+      padding-top: 90px;
+      font-size: 130px;
+      font-weight: 500;
+    }
+    & > p {
+      font-size: 38px;
+      max-width: 520px;
+      margin-top: 0px;
+    }
+    .buttons-container {
+      width: 350px;
+      & > button {
+        font-size: 30px;
+      }
     }
   }
 }
