@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import { motion } from "framer-motion";
 
 // Components
 import Calendar from "../../assets/svg/calendar-line.svg";
@@ -9,9 +10,22 @@ import Packing from "../../assets/svg/boxes.svg";
 import Truck from "../../assets/svg/truck.svg";
 import Unpacking from "../../assets/svg/empty-box.svg";
 
-export default function FeaturesSection() {
+export default function FeaturesSection(props) {
+  const { featuresSectionAnimation, featuresSectionRef, variants } = props;
+
   return (
-    <div className="features-section-container">
+    <motion.div
+      id="היתרונות"
+      className="features-section-container"
+      ref={featuresSectionRef}
+      animate={featuresSectionAnimation}
+      initial="hidden"
+      variants={variants}
+      transition={{
+        duration: 0.8,
+        ease: [0.6, 0.05, -0.01, 0.9],
+      }}
+    >
       <div className="grid-container">
         <div className="feature">
           <div className="feature__icon">
@@ -73,6 +87,6 @@ export default function FeaturesSection() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

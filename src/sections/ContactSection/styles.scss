@@ -14,12 +14,12 @@
     width: 100%;
     max-width: 400px;
   }
-  & > button:first-of-type {
+  & > a:first-of-type {
     & > div {
       letter-spacing: 4px;
     }
   }
-  & > button {
+  & > a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,11 +55,11 @@
       width: 100%;
       max-width: 400px;
     }
-    & > button:first-of-type {
+    & > a:first-of-type {
       & > div {
       }
     }
-    & > button {
+    & > a {
       font-size: 30px;
       & > span {
         width: 35px;
@@ -89,7 +89,7 @@
       & > div {
       }
     }
-    & > button {
+    & > a {
       font-size: 30px;
       & > span {
         width: 35px;
@@ -98,7 +98,7 @@
       & > div {
       }
     }
-    & > button:hover {
+    & > a:hover {
       background-color: rgb(255, 255, 255);
       color: rgb(0, 0, 0);
       border: 2px solid rgb(0, 0, 0);

@@ -53,19 +53,19 @@ export default function MobileMenu(props) {
         animate={`${isOpen ? "visible" : "hidden"}`}
       >
         <motion.div variants={item}>
-          <a onClick={toggleMenu} href="#heroSection">
+          <a onClick={toggleMenu} href="#דף_הבית">
             דף הבית
           </a>
         </motion.div>
 
         <motion.div variants={item}>
-          <a onClick={toggleMenu} href="#about">
+          <a onClick={toggleMenu} href="#אודות">
             אודות
           </a>
         </motion.div>
 
         <motion.div variants={item}>
-          <a onClick={toggleMenu} href="#contact">
+          <a onClick={toggleMenu} href="#צור_קשר">
             צור קשר
           </a>
         </motion.div>

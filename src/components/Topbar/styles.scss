@@ -12,11 +12,13 @@
   left: 0;
   right: 0;
   background-color: rgb(36, 36, 36);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   .topbar-container {
     display: flex;
     align-items: center;
     padding: 0 15px 0 10px;
     max-width: 1366px;
+
     width: 100%;
     & > svg {
       width: 130px;
