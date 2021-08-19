@@ -1,9 +1,23 @@
 import React from "react";
 import "./styles.scss";
+import { motion } from "framer-motion";
 
-export default function AboutSection() {
+export default function AboutSection(props) {
+  const { aboutSectionAnimation, aboutSectionRef, variants } = props;
+
   return (
-    <div className="about-section-container" id="about">
+    <motion.div
+      className="about-section-container"
+      id="אודות"
+      ref={aboutSectionRef}
+      animate={aboutSectionAnimation}
+      initial="hidden"
+      variants={variants}
+      transition={{
+        duration: 0.8,
+        ease: [0.6, 0.05, -0.01, 0.9],
+      }}
+    >
       <h2>אדי הובלות</h2>
       <p>
         חברתנו בעלת נסיון של 25 שנים בהובלת ציוד רגיש ומכשור יקר בכל רחבי הארץ
@@ -15,6 +29,6 @@ export default function AboutSection() {
         משימה לא פשוטה ומהווה חלק מאוד קריטי בחיי העסק לכן אנו עושים את מרב
         המאמצים בשביל לספק לכם את הרוגע הנפשי ומוודאים שתמיד תשארו מרוצים.
       </p>
-    </div>
+    </motion.div>
   );
 }
