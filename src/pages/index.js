@@ -12,6 +12,9 @@ import FeaturesSection from "../sections/FeaturesSection";
 import AboutSection from "../sections/AboutSection";
 import ContactSection from "../sections/ContactSection";
 
+// SEO
+import Seo from "../components/seo";
+
 export default function MainApp() {
   const { width } = useWindowDimensions();
   const isMobile = width <= 768;
@@ -92,6 +95,7 @@ export default function MainApp() {
 
   return (
     <Layout>
+      <Seo />
       <div className="main-app">
         <div className="main-app__container">
           <HeroSection
